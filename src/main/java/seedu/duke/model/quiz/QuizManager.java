@@ -45,8 +45,6 @@ public class QuizManager extends ModelManager implements QuizInteractable {
         try {
             noOfQues = Integer.parseInt(separatedInputs[1]);
             assert noOfQues != 0 : "noOfQues should not be 0";
-            boolean noOfQuesIsValid = (noOfQues <= getQuizListSize());
-            System.out.println(noOfQuesIsValid);
 
             if (!((noOfQues > 0) && (noOfQues <= getQuizListSize()))) {
 
